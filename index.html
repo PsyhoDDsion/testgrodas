@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">
+</head>
+<body>
+<header>
+<nav class="head">
+    <div class="blockk">
+    <div id="cart" >
+        <button onclick="#" type="button" class="btn btn-inverse btn-block btn-lg"><i class="fa fa-shopping-cart"></i><span id="cart-total"> 1</span></button>
+        <div id="cartmodal" class="checkoutcart1" style="display: block;">
+            <form action="#" method="post" enctype="multipart/form-data" id="formcart">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <td class="text-left">
+                            <a href="#">ТЕСТ Вивайб 4+ Хит продаж</a>
+                        </td>
+                        <td class="text-left">
+                            <div class="price">1</div>
+                            <button type="button" onclick="cart.add('13941');" title="Добавить ещё 1" class="button_increase"><i></i></button>
+                            <button type="button" onclick="
+                        cart.remove('1');
+                        " title="Уменьшить на 1" class="button_decrease"><i></i></button>
+                        </td>
+                        <td class="text-right">5 539 грн.</td>
+                        <td><button type="button" title="Удалить" class="button_remove" onclick="cart.remove('1');"><i class="fa fa-close"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class="bottom_row bottom_row_cart">
+                <span>Итого: </span> <span>5 539 грн.</span>
+                <div class="pull-right"><a href="#zatemnenie" class="btn btn-primary btn-primary-cart" onclick="checkoutmodal.confirm()">Оформить заказ</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="cartmodal" class="checkoutcart3" style="display: block;">
+        <div class="pull-right" style="font-size: 11px;"></div>
+        <div id="zatemnenie">
+        <div class="end-text">
+            <a href="#" class="a-close" onclick="#"><i class="fa fa-close modal-close"></i></a>
+            Спасибо за покупку. Наши менеджеры свяжутся с Вами в ближайшее время
+        </div>
+        </div>
+    </div>
+</div>
+    <div class="sp-sp">
+        <ul id="sp-nav">
+            <li class="sp-li"><a href="">ТОВАР</a>
+                <ul>
+                    <li><a href="">ТОВАР</a>
+                        <ul>
+                            <li><a href="">ТОВАР1</a></li>
+                            <li><a href="">ТОВАР2</a></li>
+                            <li><a href="">ТОВАР3</a></li>
+                            <li><a href="">ТОВАР4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ТОВАР</a>
+                        <ul>
+                            <li><a href="">ТОВАР1</a></li>
+                            <li><a href="">ТОВАР2</a></li>
+                            <li><a href="">ТОВАР3</a></li>
+                            <li><a href="">ТОВАР4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ТОВАР</a></li>
+                    <li><a href="">ТОВАР</a></li>
+                    <li><a href="">ТОВАР</a>
+                        <ul>
+                            <li><a href="">ТОВАР4</a></li>
+                            <li><a href="">ТОВАР5</a></li>
+                            <li><a href="">ТОВАР6</a></li>
+                            <li><a href="">ТОВАР7</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ТОВАР</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+<section>
+    <div class="checkbox">
+        <li class="check">
+            <label for="filter1" class="lab">
+                <input class="filtr-chk" type="checkbox" value="1" id="filter1">
+                <span id="sqr"><i class="fas fa-check fa-1x"></i></span> РАЗ
+            </label>
+        </li>
+        <li class="check">
+            <label for="filter2" class="lab">
+                <input class="filtr-chk" type="checkbox" value="2" id="filter2">
+                <span id="sqr"><i class="fas fa-check fa-1x"></i></span> РАЗ
+            </label>
+        </li>
+        <li class="check">
+            <label for="filter3" class="lab">
+                <input class="filtr-chk" type="checkbox" value="3" id="filter3">
+                <span id="sqr"><i class="fas fa-check fa-1x"></i></span> РАЗ
+            </label>
+        </li>
+    </div>
+</section>
+<section>
+    <div class="rating">
+        <input type="radio" name="rating" value="1" id="star1" class="star_rating1">
+        <label for="star1" class="star_rating fa fa-star-o fa-4x star1">
+            <div class="star"></div>
+        </label>
+        <input type="radio" name="rating" value="2" id="star2" class="star_rating1">
+        <label for="star2" class="star_rating fa fa-star-o fa-4x star2">
+            <div class="star"></div>
+        </label>
+        <input type="radio" name="rating" value="3" id="star3" class="star_rating1">
+        <label for="star3" class="star_rating fa fa-star-o fa-4x star3">
+            <div class="star"></div>
+        </label>
+        <input type="radio" name="rating" value="4" id="star4" class="star_rating1">
+        <label for="star4" class="star_rating fa fa-star-o fa-4x star4">
+            <div class="star"></div>
+        </label>
+        <input type="radio" name="rating" value="5" id="star5" class="star_rating1">
+        <label for="star5" class="star_rating fa fa-star-o fa-4x star5">
+            <div class="star"></div>
+        </label>
+    </div>
+</section>
+</body>
+</html>
